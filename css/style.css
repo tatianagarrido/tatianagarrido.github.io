@@ -18,7 +18,7 @@ body {
 	font-size: 10pt;
 }
 
-.aboutTyping {
+.aboutTyping, .noMobile p {
 	font-family: 'Amatic SC';
 	font-size: 60pt;	
 }
@@ -62,7 +62,7 @@ span {
 	display: none;
 }
 
-.card {
+.card, a{
 	background-color: #cc99ff;
 	color: white;
 	border: 0;
@@ -78,13 +78,14 @@ span {
 .card-header button {
 	color: white;
 	text-align: center;
+	text-decoration: underline;
 }
 
-h5 {
-	text-align: center;
+h2 {
+	margin-top: 15px;
 }
 
-.btn-link:hover {
+.btn-link:hover, a:hover {
 	color: #9966CC;
 }
 
@@ -92,17 +93,17 @@ h5 {
 	max-height: 45vh;
 }
 
-.col-7 {
+.col-7, .col-8 {
 	height: 40vh;
     overflow: auto;
 }
 
-h1 {
+h1, h2 {
 	font-size: 50pt;
 	font-family: 'Amatic SC';
 }
 
-.icons {
+.icons, h2, h5 {
 	text-align: center;
 }
 
@@ -111,14 +112,61 @@ h1 {
 	margin: 0 3%;
 }
 
+.image {
+  display: block;
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+}
+
+.imgProj:hover .overlay {
+  opacity: 1;
+}
+
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .tooltip-inner { 
 	background-color: #bf80ff;
+}
+
+.bckGround {
+	background-color: #bf80ff;
+	padding: 15px;
+}
+
+.pointer {
+	font-size: 13pt;
+}
+
+.noMobile {
+	display: none;
 }
 
 .tooltip.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .tooltip.bs-tooltip-bottom .arrow::before {
 	border-bottom-color: #bf80ff;
 }
-																															/** scrollbar aqui **/
+																						/** scrollbar aqui **/
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -133,4 +181,18 @@ h1 {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #9966CC;
+}
+																						/** bloquear o mobile **/
+@media screen and (max-width: 1279px) {
+	.noMobile {
+		display: block;
+		color: white;
+		margin: 10%auto;
+		width: 90%;
+		height: 90vh;
+	}
+	
+	#wrapper {
+		display: none;
+	}
 }
