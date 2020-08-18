@@ -44,7 +44,8 @@
 							<div class="col-5">
 								<p class="aboutTyping"></p>
 								<div class="icons">
-									<a href="mailto:tatianasofiagarrido@hotmail.com"><img src="icon/mail.png"></a>
+									<a href="mailto:
+sofiagarrido@hotmail.com"><img src="icon/mail.png"></a>
 									<a href="tel:+351910072665"><img src="icon/phone.png" id="pop" title="91 007 2665" data-placement="bottom"></a>
 									<a href="https://www.linkedin.com/in/tatiana-garrido-9605751b1/"><img src="icon/linkedin.png"></a>
 								</div>
