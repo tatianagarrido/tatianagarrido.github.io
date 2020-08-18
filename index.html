@@ -20,7 +20,9 @@
 	</head>
 
 	<body scroll="no" style="overflow: hidden">
-
+	<div class="noMobile">
+		<p>This portfolio has a minimum width of 1280px, sorry!</p>
+	</div>
 	<div id="wrapper">
 		<div id="entrada">
 			<p class="typing"></p>
@@ -44,15 +46,14 @@
 							<div class="col-5">
 								<p class="aboutTyping"></p>
 								<div class="icons">
-									<a href="mailto:
-sofiagarrido@hotmail.com"><img src="icon/mail.png"></a>
+									<a href="mailto:tatianasofiagarrido@hotmail.com"><img src="icon/mail.png"></a>
 									<a href="tel:+351910072665"><img src="icon/phone.png" id="pop" title="91 007 2665" data-placement="bottom"></a>
 									<a href="https://www.linkedin.com/in/tatiana-garrido-9605751b1/"><img src="icon/linkedin.png"></a>
 								</div>
 							</div>
 							<div class="col-7">
 								<p>Hello again!</p>
-								<p>I'm Tatiana, I'm from Setúbal, Portugal, and I'm looking for my first job in this area! <br>To get at this point, back in 2014 I took a <b>Visual Arts and Technologies degree</b> at ESELx, where I learned a bit of everything! From sculpture to 3D digital animation.<br>As I couldn't a job in the area I worked at contact centers until last September where I took a <b>Web Design</b> course at LSD</p>
+								<p>I'm Tatiana, I'm from Setúbal, Portugal, and I'm looking for my first job in this area! <br>To get at this point, back in 2014 I took a <b>Visual Arts and Technologies degree</b> at ESELx, where I learned a bit of everything! From sculpture to 3D digital animation.<br>As I couldn't a job in the area I worked at contact centers until last September where I took a <b>Web Design</b> course at LSD and here I am making this portfolio.</p>
 								<p><span>But what am I?</span></p>
 								<p><span class="cdr">Part < Coder ></span><br>
 									I'm focused on writing clean and efficient code!<br>I know my way aroung HTML, CSS, JavaScript, PHP and SQL. I can also work with some frameworks like Bootstrap and jQuery.</p>
@@ -76,7 +77,29 @@ sofiagarrido@hotmail.com"><img src="icon/mail.png"></a>
 				</div>
 				<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
 				  <div class="card-body">
-					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					<div class="row">
+							<div class="col-8">
+								<div class="imgProj">
+									<img src="icon/fruaHover.png" class="image">
+									<div class="overlay">
+										<img src="icon/frua.png" class="image">
+									</div>
+								</div>
+								<h2>Frua's Website</h2>
+								<p>This was the main project of my Web Design course.<br>
+								Frua is street food truck with a twist because it sells delicious fruit juices! But the presence online was weak that's why I picked them.<br>
+								The highlights of this website are the freshness and the modern looks. This bright green is the key for bringing the fresh, healthy, young and ecological vibes. Also picked a sans-serif font for legibility and an all-caps font for headlines for a friendly and modern feel.<br>
+								This website has a functional data base, where the owners can easily the form's results and update their menu for seasonal fruit juices.</p>
+								<p><b>For this website I used:</b> Adobe Photoshop, Adobe Ilustrator, Mockplus (I didn't have access to Sketch), HTML, CSS, JavaScript, PHP, mySQL, Bootstrap and jQuery. </p>
+								<p>Click <a href="http://frua-frutanarua.epizy.com/"><u>here</u></a> to visit the (on going) site!</p>
+							</div>
+							<div class="col-4">
+								<div class="bckGround">
+									<p><span>Currently I'm:</span></p>
+									<p>Learning more about React.js to update Frua's projects and fixing some of its bugs. <span class="pointer"></span></p>
+								</div>
+							</div>
+						</div>
 				  </div>
 				</div>
 			  </div>
@@ -136,8 +159,9 @@ sofiagarrido@hotmail.com"><img src="icon/mail.png"></a>
 			.type("Let's talk!", {delay: 2500})
 			.go();
 			
+			new TypeIt('.pointer').go();
 			
-				$('#pop').tooltip();
+			$('#pop').tooltip();
 	
 			  
 			  
