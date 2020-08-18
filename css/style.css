@@ -1,0 +1,136 @@
+body {
+	font-family: 'Didact Gothic';
+	background-color: #cc99ff;
+}
+
+.typing {
+	font-family: 'Amatic SC';
+	font-size: 100pt;
+	color: white;
+}
+
+.tinyTyping {
+	color: white;
+	text-align: center;
+}
+
+.tiny {
+	font-size: 10pt;
+}
+
+.aboutTyping {
+	font-family: 'Amatic SC';
+	font-size: 60pt;	
+}
+
+span {
+	font-size: 25pt;
+}
+
+.cdr {
+	font-family: 'VT323';
+}
+
+.dsgr {
+	font-family: 'Barrio';
+}
+
+#wrapper {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+}
+
+#entrada {
+	padding-bottom: 50px;
+	height: 100vh;
+}
+
+#footer {
+	bottom: 2%;
+	right: 2%;
+	text-align: right;
+	position: fixed;
+	z-index: -10;
+	color: #bf80ff;
+}
+
+#accordion {
+	position: fixed;
+	top: 10%;
+	width: 90%;
+	display: none;
+}
+
+.card {
+	background-color: #cc99ff;
+	color: white;
+	border: 0;
+	font-size: 13pt;
+}
+
+.card-header {
+    background-color: rgba(0,0,0,0);
+	padding: 0;
+	border-bottom: 0;
+}
+
+.card-header button {
+	color: white;
+	text-align: center;
+}
+
+h5 {
+	text-align: center;
+}
+
+.btn-link:hover {
+	color: #9966CC;
+}
+
+.card-body {
+	max-height: 45vh;
+}
+
+.col-7 {
+	height: 40vh;
+    overflow: auto;
+}
+
+h1 {
+	font-size: 50pt;
+	font-family: 'Amatic SC';
+}
+
+.icons {
+	text-align: center;
+}
+
+.icons img {
+	width: 40px;
+	margin: 0 3%;
+}
+
+.tooltip-inner { 
+	background-color: #bf80ff;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .tooltip.bs-tooltip-bottom .arrow::before {
+	border-bottom-color: #bf80ff;
+}
+																															/** scrollbar aqui **/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d9b3ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bf80ff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9966CC;
+}
