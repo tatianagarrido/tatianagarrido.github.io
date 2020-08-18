@@ -122,15 +122,15 @@
 		
 			new TypeIt('.typing', {
 				strings: ["Oh, hello there!", "I'm Tatiana, nice to meet you and welcome to my portfolio"],
-				speed: 1, /* 50 e no delay 5000*/
+				speed: 50,
 				waitUntilVisible: true
 			}).go();
 			
 			new TypeIt('.tinyTyping', {
-				startDelay: 1,
+				startDelay: 5000,
 				cursor: false,
 				strings: ["(Click anywhere to continue)"],
-				speed: 1,
+				speed: 50,
 				waitUntilVisible: true
 			}).go();
 			
@@ -162,10 +162,6 @@
 			new TypeIt('.pointer').go();
 			
 			$('#pop').tooltip();
-	
-			  
-			  
-			/** Committed Determined Passionate Persistent Motivated  Cheerful**/
 			
 			$('#entrada').click(function() {
 				console.log('olá');
